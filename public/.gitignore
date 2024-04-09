@@ -1,0 +1,9 @@
+content/*
+!wp-content
+content/themes/*
+!content/themes
+!content/themes/jcdevandcode
+vendor
+wp
+wp-config.php
+.htaccess
