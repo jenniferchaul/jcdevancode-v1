@@ -66,7 +66,7 @@ header .container .menu-toggle {
 header .container .navbar-content {
   display: flex;
   font-family: "Montserrat";
-  color: #365B6d;
+  color: #032e40;
 }
 header .container .navbar-content .navbar-nav {
   display: flex;
@@ -76,7 +76,7 @@ header .container .navbar-content .navbar-nav .nav-item {
 }
 header .container .navbar-content .navbar-nav .nav-link {
   text-decoration: none;
-  color: #365B6d;
+  color: #032e40;
 }
 header .container .navbar-content .navbar-nav .nav-link::before {
   font-family: "Font Awesome 5 Free";
@@ -476,6 +476,7 @@ header .container .navbar-content .navbar-nav .nav-link.phone::before {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
+  color: #032e40;
 }
 .project .cards-project {
   display: flex;
@@ -508,4 +509,107 @@ header .container .navbar-content .navbar-nav .nav-link.phone::before {
   border-radius: 26px;
   padding: 0.5rem;
   margin: 1rem;
+}
+
+.faq {
+  background: #032e40;
+  height: auto;
+  font-family: "Rajdhani";
+  letter-spacing: 1px;
+  padding: 3rem 17rem;
+}
+.faq h2 {
+  color: #f09E33;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.faq h2:before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(240, 158, 51, 0.3490196078);
+  border-radius: 50%;
+  z-index: -1;
+  top: 127.5rem;
+  left: 54rem;
+  z-index: 1;
+}
+.faq h2:after {
+  position: relative;
+  z-index: 1;
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background: #f09E33;
+  bottom: 0.1rem;
+  left: 0.3rem;
+}
+.faq h3 {
+  font-size: 28px;
+  line-height: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.faq .faq-part {
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 20px;
+}
+.faq .faq-part .image-faq {
+  width: 46rem;
+  height: 30rem;
+  border-radius: 20px 0 20px 0;
+}
+.faq .faq-part .questions {
+  width: 47rem;
+  display: flex;
+  align-items: center;
+  color: #032e40;
+  padding: 2rem 0;
+}
+.faq .faq-part .questions li {
+  padding: 2rem 0 0;
+}
+.faq .faq-part .questions .active {
+  font-size: 19px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #032e40;
+  position: relative;
+}
+.faq .faq-part .questions p {
+  font-size: 16px;
+  padding: 0.5rem 2rem 0 0;
+  display: none;
+}
+.faq .faq-part .questions a.open:after {
+  content: url("../images/moins.png");
+  position: absolute;
+  top: 0;
+  margin-left: 5px;
+}
+.faq .faq-part .questions a.close:after {
+  content: url("../images/plus.png");
+  position: absolute;
+  top: 0;
+  margin-left: 5px;
+}
+
+.form {
+  background: #ffffff;
+  height: 94vh;
+  font-family: "Rajdhani";
+  letter-spacing: 1px;
+  padding: 3rem 17rem;
 }/*# sourceMappingURL=style.css.map */

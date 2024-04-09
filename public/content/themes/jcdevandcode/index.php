@@ -327,12 +327,6 @@
 
     <section class="faq">
 
-        <div>
-
-            <img src="" alt="">
-
-        </div>
-
 
         <div>
 
@@ -340,76 +334,83 @@
 
             <h3>Nous répondons à vos questions</h3>
 
-            <div>
+            <div class="faq-part">
 
-                <ul>
-
-                    <li>
-                        <a href="active">
-                            Quels sont les services que vous proposez ?
-                        </a>
-                        <p>
-                            Nous proposons une gamme complète de services de création de sites web : Sites vitrine, site e-commerce ou encore application web sur-mesure. Nous offrons également des services de conception graphique, de référencement et de maintenance.
-                        </p>
-                    </li>
+                    <img class="image-faq" src="content/themes/jcdevandcode/assets/images/faq.png" alt="">
 
 
-                    <li>
-                        <a href="active">
-                            Quelle est la différence entre un site vitrine et un site e-commerce ?
-                        </a>
+                <div class="questions">
 
-                        <p>
-                            Un site vitrine est conçu pour présenter des informations sur votre entreprise, vos produits ou services, tandis qu'un site e-commerce permet aux utilisateurs d'acheter des produits directement depuis le site. Un site vitrine met l'accent sur la présentation et l'information, tandis qu'un site e-commerce inclut des fonctionnalités de vente en ligne, telles que des paniers d'achat et des paiements en ligne.
-                        </p>
-                    </li>
-                    <li>
-                        <a href="active">
-                            Quels sont les avantages d'avoir un site internet pour mon entreprise ?
-                        </a>
+                    <ul>
 
-                        <p>
-                            Un site internet peut augmenter la visibilité de votre entreprise, élargir votre portée géographique, renforcer la crédibilité de votre marque, offrir un canal de communication avec vos clients et générer des ventes ou des prospects.
-                        </p>
-
-                    </li>
-                    <li>
-
-                        <a href="active">
-                            Quel est le prix d'un site internet ou d'une application web ?
-                        </a>
-
-                        <p>
-                            Les coûts de création d'un site internet ou d'une application web dépendent de plusieurs facteurs, y compris la complexité du projet, les fonctionnalités requises et le niveau de personnalisation. Nous offrons des solutions adaptées à différents budgets et nous serions heureux de discuter de vos besoins spécifiques pour vous fournir un devis personnalisé.
-                        </p>
-                    </li>
-                    <li>
-                        <a href="active">
-                            Quelle est la durée moyenne pour la création d'un site web ?
-                        </a>
-                        <p>
-                            La durée de création d'un site web dépend de plusieurs facteurs, tels que la taille et la complexité du projet, ainsi que la disponibilité des ressources. Nous travaillons avec vous pour établir un calendrier réaliste en fonction de vos besoins et de vos délais.
-                        </p>
-                    </li>
-
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                        <li>
+                            <a class="active close" href="#">
+                                Quels sont les services que vous proposez ?
+                            </a>
+                            <p>
+                                Nous proposons une gamme complète de services de création de sites web : Sites vitrine, site e-commerce ou encore application web sur-mesure. Nous offrons également des services de conception graphique, de référencement et de maintenance.
+                            </p>
+                        </li>
 
 
+                        <li>
+                            <a class="active close" href="#">
+                                Quelle est la différence entre un site vitrine et un site e-commerce ?
+                            </a>
 
+                            <p>
+                                Un site vitrine est conçu pour présenter des informations sur votre entreprise, vos produits ou services, tandis qu'un site e-commerce permet aux utilisateurs d'acheter des produits directement depuis le site. Un site vitrine met l'accent sur la présentation et l'information, tandis qu'un site e-commerce inclut des fonctionnalités de vente en ligne, telles que des paniers d'achat et des paiements en ligne.
+                            </p>
+                        </li>
+                        <li>
+                            <a class="active close" href="#">
+                                Quels sont les avantages d'avoir un site internet pour mon entreprise ?
+                            </a>
 
-                    <li></li>
+                            <p>
+                                Un site internet peut augmenter la visibilité de votre entreprise, élargir votre portée géographique, renforcer la crédibilité de votre marque, offrir un canal de communication avec vos clients et générer des ventes ou des prospects.
+                            </p>
 
-                </ul>
+                        </li>
+                        <li>
+
+                            <a class="active close" href="#">
+                                Quel est le prix d'un site internet ou d'une application web ?
+                            </a>
+
+                            <p>
+                                Les coûts de création d'un site internet ou d'une application web dépendent de plusieurs facteurs, y compris la complexité du projet, les fonctionnalités requises et le niveau de personnalisation. Nous offrons des solutions adaptées à différents budgets et nous serions heureux de discuter de vos besoins spécifiques pour vous fournir un devis personnalisé.
+                            </p>
+                        </li>
+                        <li>
+                            <a class="active close" href="#">
+                                Quelle est la durée moyenne pour la création d'un site web ?
+                            </a>
+                            <p>
+                                La durée de création d'un site web dépend de plusieurs facteurs, tels que la taille et la complexité du projet, ainsi que la disponibilité des ressources. Nous travaillons avec vous pour établir un calendrier réaliste en fonction de vos besoins et de vos délais.
+                            </p>
+                        </li>
+                        <li>
+                            <a class="active close" href="#">
+                                Quelle est votre politique en matière de protection des données ?
+                            </a>
+                            <p>
+                                Nous prenons la protection des données et la confidentialité très au sérieux. Nous nous conformons aux lois et réglementations en vigueur en matière de protection des données, y compris le RGPD, et nous mettons en place des mesures de sécurité robustes pour protéger vos informations personnelles.
+                            </p>
+                        </li>
+
+                    </ul>
+
+                </div>
 
             </div>
 
         </div>
 
+    </section>
 
+    <section class="form">
+        
     </section>
 
     <footer>
@@ -417,6 +418,25 @@
 
 
     </footer>
+
+    <script>
+    // Sélectionnez tous les liens de questions
+    const questionToggles = document.querySelectorAll('.active');
+
+    // Ajoutez un gestionnaire d'événements à chaque lien
+    questionToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+            // Empêchez le comportement par défaut du lien (aller vers une autre page)
+            e.preventDefault();
+            // Sélectionnez le paragraphe suivant (la réponse à la question)
+            const answer = this.nextElementSibling;
+            // Basculer la visibilité de la réponse
+            answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+            this.classList.toggle('open');
+            this.classList.toggle('close');
+        });
+    });
+</script>
 
 </body>
 
