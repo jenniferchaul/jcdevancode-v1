@@ -46,6 +46,9 @@
                             <a class="nav-link" href="#">Réalisations</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#">F.A.Q.</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                         <li class="nav-item"><a class="nav-link mail" href="mailto:jcdevandcode@gmail.com">jcdevandcode@gmail.com</a> </li>
@@ -330,13 +333,13 @@
 
         <div>
 
-            <h2>F A Q</h2>
+            <h2>F. A. Q.</h2>
 
             <h3>Nous répondons à vos questions</h3>
 
             <div class="faq-part">
 
-                    <img class="image-faq" src="content/themes/jcdevandcode/assets/images/faq.png" alt="">
+                <img class="image-faq" src="content/themes/jcdevandcode/assets/images/faq.png" alt="">
 
 
                 <div class="questions">
@@ -410,33 +413,189 @@
     </section>
 
     <section class="form">
-        
+
+        <div class="container-form">
+
+            <div class="info-contact">
+
+                <h2>Contactez-nous</h2>
+
+                <p>Vous avez un projet de création de site web ?</p>
+
+                <p>Contactez-nous, par email, téléphone ou via le formulaire ci-contre</p>
+
+                <p>Nous vous fournirons un devis détaillé dans un délai de 48 heures.</p>
+
+            </div>
+
+            <div class="picto-email-avion">
+
+<img src="content/themes/jcdevandcode/assets/images/email-avion.png" alt="">
+
+
+</div>
+
+
+            <div>
+
+                <form action="process.php" method="POST">
+                    <div>
+                        <label for="lastname">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                    </div>
+                    <div>
+                        <label for="firstname">Prénom</label>
+                        <input type="text" id="prénom" name="prénom" placeholder="Votre prénom" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
+                    </div>
+                    <div>
+                        <label for="telephone">Téléphone</label>
+                        <input type="telephone" id="email" name="telephone" placeholder="Votre n° de téléphone" required>
+                    </div>
+                    <div>
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                    </div>
+                    <div class="button-submit">
+                        <button type="submit">Soumettre</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
     </section>
 
     <footer>
 
+        <div class="container-footer">
 
+            <div class="footer-logo">
+                <a href="logo">
+                    <img class="img-logo" src="content/themes/jcdevandcode/assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="intro-footer">
+
+                <p>
+                    <span>jc dev&code</span> met son expertise à votre service <br> pour créer votre site vitrine ou e-commerce.
+                </p>
+
+                <div class="social-footer">
+
+                    <a href="">
+                        <i class="fab fa-facebook">
+
+                        </i>
+                    </a>
+
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div class="bloc-services">
+
+                <h2><span>S</span>ervices</h2>
+
+                <ul>
+
+                <li><a href="#">Sites vitrine</a></li>
+                    <li><a href="#">Sites e-commerce</a></li>
+                    <li><a href="#">SEO - Référencement naturel</a></li>
+                    <li><a href="#">Branding </a></li>
+
+                </ul>
+            </div>
+
+            <div class="bloc-contact">
+
+                <h2><span>C</span>ontact</h2>
+
+                <div class="info-contact">
+
+                    <div class="footer-social-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+
+                    <div class="footer-social-info">
+                        <p>06.61.24.65.20</p>
+                    </div>
+                </div>
+
+                <div class="info-contact">
+                    <div class="footer-social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+
+                    <div class="footer-social-info">
+                        <p>jcdevandcode@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-contact">
+
+                    <div class="footer-social-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+
+                    <div class="footer-social-info">
+                        <p>80 Impasse des Vignes, 01290 GRIEGES </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="copyright">
+
+            <p>&#169; Copyright 2024 <span>jc dev&code</span>. Tous droits résérvés</p>
+            </div>
+
+            <div class="legale-notices">
+                <ul>
+                    <li><a href="">Mentions légales</a></li>
+                    <li><a href="">Conditions générales de vente</a></li>
+                    <li><a href="">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+
+        </div>
 
     </footer>
 
     <script>
-    // Sélectionnez tous les liens de questions
-    const questionToggles = document.querySelectorAll('.active');
+        // Sélectionnez tous les liens de questions
+        const questionToggles = document.querySelectorAll('.active');
 
-    // Ajoutez un gestionnaire d'événements à chaque lien
-    questionToggles.forEach(toggle => {
-        toggle.addEventListener('click', function(e) {
-            // Empêchez le comportement par défaut du lien (aller vers une autre page)
-            e.preventDefault();
-            // Sélectionnez le paragraphe suivant (la réponse à la question)
-            const answer = this.nextElementSibling;
-            // Basculer la visibilité de la réponse
-            answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
-            this.classList.toggle('open');
-            this.classList.toggle('close');
+        // Ajoutez un gestionnaire d'événements à chaque lien
+        questionToggles.forEach(toggle => {
+            toggle.addEventListener('click', function(e) {
+                // Empêchez le comportement par défaut du lien (aller vers une autre page)
+                e.preventDefault();
+                // Sélectionnez le paragraphe suivant (la réponse à la question)
+                const answer = this.nextElementSibling;
+                // Basculer la visibilité de la réponse
+                answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+                this.classList.toggle('open');
+                this.classList.toggle('close');
+            });
         });
-    });
-</script>
+    </script>
 
 </body>
 
