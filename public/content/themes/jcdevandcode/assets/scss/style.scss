@@ -20,8 +20,6 @@
         background-color: #f09e3321;
         border-radius: 50%;
         z-index: -1;
-        //top: 49.5rem;
-        //left: 26rem;
     }
 
     h2:after {
@@ -39,7 +37,6 @@
 
 
 header {
-
     .container {
         display: flex;
         justify-content: center;
@@ -66,34 +63,95 @@ header {
             display: flex;
             font-family: $main-font;
             color: $second-color;
+            font-weight: 500;
 
             .navbar-nav {
                 display: flex;
 
                 .nav-item {
                     margin: 0 2rem;
-                }
+                    position: relative;
+                    display: flex;
+                    height: 6rem;
+                    align-items: center;
 
-                .nav-link {
-                    text-decoration: none;
-                    color: $second-color;
+                    .sub-menu {
+                        display: none;
+                        position: absolute;
+                        background-color: #ffffff;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        top: 96px;
+                        border-top: 2.5px solid $first-color;
 
-                    &::before {
-                        font-family: "Font Awesome 5 Free";
-                        display: inline-block;
-                        padding-right: 3px;
-                        vertical-align: middle;
-                        font-weight: 900;
+                        ul {
+                            list-style-type: none;
+                            padding: 0;
+                            margin: 0;
+
+                            position: relative;
+                            left: 0;
+                            top: 163%;
+                            width: 240px;
+                            text-align: left;
+                            z-index: 1;
+                            -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+                            transition: .5s;
+
+                            li {
+
+                                a {
+                                    display: block;
+                                    padding: 10px 20px;
+                                    text-decoration: none;
+                                    color: #333;
+                                    font-weight: 500;
+                                    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+
+                                    &:hover {
+                                        background-color: $first-color;
+                                        color: $third-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover .sub-menu {
+                        display: block;
+                        left: -1.5rem;
+                    }
+
+                    .nav-link {
+                        text-decoration: none;
+                        color: $second-color;
+
+                        &::before {
+                            font-family: "Font Awesome 5 Free";
+                            display: inline-block;
+                            padding-right: 3px;
+                            vertical-align: middle;
+                            font-weight: 900;
+                        }
+
+                        i {
+                            font-size: 15px;
+                            display: inline-block;
+                        }
+                    }
+
+                    .fa-angle-down::before {
+                        content: "\f107";
+                    }
+
+                    .nav-link.mail::before {
+                        content: '\f0e0';
+                    }
+
+                    .nav-link.phone::before {
+                        content: '\f095';
                     }
                 }
 
-                .nav-link.mail::before {
-                    content: '\f0e0';
-                }
-
-                .nav-link.phone::before {
-                    content: '\f095';
-                }
             }
         }
     }
@@ -261,8 +319,6 @@ header {
                 width: 44rem;
                 margin-bottom: 4rem;
 
-                //@include title;
-
                 h2 {
                     color: $first-color;
                     font-size: 20px;
@@ -373,7 +429,6 @@ header {
             a {
                 text-decoration: none;
                 color: #022034;
-
 
             }
 
@@ -576,8 +631,6 @@ header {
         flex-wrap: wrap;
 
         .card-project {
-            //display: flex;
-            //align-items: flex-start;
             margin: 3rem;
 
             .macbook {
@@ -701,17 +754,6 @@ header {
                 color: $second-color;
                 position: relative;
 
-                //&:before {
-                //    width: 2px;
-                //    height: 12px;
-                //    background: $first-color;
-                //    position: absolute;
-                //    content: "";
-                //    right: 13px;
-                //    top: 26px;
-                //    transform: rotate(0deg);
-                //    transition: all 0.2s ease-in-out;
-                //}
             }
 
             p {
@@ -736,18 +778,6 @@ header {
             margin-left: 5px;
         }
 
-        //.questions a:after {
-        //    width: 12px;
-        //    height: 2px;
-        //    background-color: $first-color;
-        //    position: absolute;
-        //    content: "";
-        //    transform: rotate(0deg);
-        //    transition: all 0.2s ease-in-out;
-        //    right: 15rem;
-        //    top: 211.1rem;
-        //}
-
     }
 
 }
@@ -765,6 +795,7 @@ header {
 
         .info-contact {
             margin-right: 2rem;
+            z-index: 1;
         }
 
         h2 {
@@ -919,7 +950,6 @@ footer {
                 width: 35px;
                 height: 35px;
                 line-height: 38px;
-                //background: #015A84;
                 background: #3a5a73;
                 text-align: center;
                 position: relative;
@@ -955,7 +985,6 @@ footer {
                 background: $first-color;
             }
 
-
         }
 
         .bloc-services {
@@ -967,6 +996,7 @@ footer {
 
             ul {
                 margin-left: 1rem;
+                width: 16rem;
 
                 li {
                     padding: 0.5rem;

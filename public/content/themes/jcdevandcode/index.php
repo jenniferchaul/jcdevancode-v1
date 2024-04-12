@@ -37,19 +37,28 @@
                 <div class="navbar-content">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Accueil</a>
+                            <a class="nav-link underline active" href="#">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link underline services-menu" href="#">Services <span><i class="fas fa-angle-down"></i></span> </a>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li><a href="#">Sites vitrine</a></li>
+                                    <li><a href="#">Site e-commerce</a></li>
+                                    <li><a href="#">SEO - Référencement naturel</a></li>
+                                    <li><a href="#">Branding</a></li>
+                                </ul>
+
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Réalisations</a>
+                            <a class="nav-link underline" href="#">Réalisations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">F.A.Q.</a>
+                            <a class="nav-link underline" href="#">F.A.Q.</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link underline" href="#">Contact</a>
                         </li>
                         <li class="nav-item"><a class="nav-link mail" href="mailto:jcdevandcode@gmail.com">jcdevandcode@gmail.com</a> </li>
                         <li class="nav-item"><a class="nav-link phone" href="tel:+33661246520">06 61 24 65 20</a></li>
