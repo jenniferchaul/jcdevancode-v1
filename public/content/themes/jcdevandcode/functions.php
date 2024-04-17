@@ -1,48 +1,45 @@
 <?php
 
+// Initialisation du thème
+add_action('after_setup_theme', 'jcdevandcode_initializeTheme');
 
-add_action(
-    'after_setup_theme', // nom de l'event
-    'jcdevandcode_initializeTheme' //nom de la fonction
-);
+// Retirez l'ancien hook utilisant the_block_template_skip_link().
+remove_action( 'wp_footer', 'the_block_template_skip_link' );
+
+// Ajoutez le nouveau hook utilisant wp_enqueue_block_template_skip_link().
+add_action( 'wp_footer', 'wp_enqueue_block_template_skip_link' );
+
 
 if (!function_exists('jcdevandcode_initializeTheme')) {
     function jcdevandcode_initializeTheme()
     {
-        // DOC add_theme_support : https://developer.wordpress.org/reference/functions/add_theme_support/
-        // nous laissons wordpress gérer la balise <title> de notre thème
+        // Ajout de la prise en charge de la balise <title>
         add_theme_support('title-tag');
 
-        // les posts de notre thème peuvent avoir une image de mise en avant
+        // Activation des images mises en avant pour les articles
         add_theme_support('post-thumbnails');
 
-        // le thème peut gérer des menus
+        // Activation des menus
         add_theme_support('menus');
     }
-};
+}
 
+// Chargement des assets du thème
+add_action('wp_enqueue_scripts', function() {
+    // Chargement du fichier CSS
+    wp_enqueue_style(
+        'jcdevandcode-styles', // Identifiant de notre fichier CSS
+        get_theme_file_uri('assets/css/style.css'), // Chemin vers le fichier CSS
+        [], // Aucune dépendance
+        '1.0.0' // Version du fichier CSS
+    );
 
-
-// chargement des assets du thème
-add_action(
-    'wp_enqueue_scripts', // event pour charger nos assets
-    function() {
-        wp_enqueue_style(
-            'jcdevandcode-styles', // identifiant de notre fichier css
-            // wordpress nous calcule le chemin vers le fichier assets/css/style.css
-            get_theme_file_uri('assets/scss/style.css')
-        );
-
-
-        // DOC wp_enqueue_script https://developer.wordpress.org/reference/functions/wp_enqueue_script/
-        wp_enqueue_script(
-            'category-js', // nom du script
-            get_theme_file_uri('assets/js/category.js'),
-            [], // category.js n'a pas besoin d'autre javascript pour fonctionner
-            '1.0.0', // version de notre javascript
-            true // la balise script sera injectée dans le footer
-        );
-    }
-
-    
-);
+    // Chargement du script JavaScript dans le footer
+    wp_enqueue_script(
+        'main-js', // Identifiant du script
+        get_theme_file_uri('assets/js/main.js'), // Chemin vers le fichier JavaScript
+        [], // Aucune dépendance
+        '1.0.0', // Version du script JavaScript
+        true // Le script sera placé dans le footer
+    );
+});

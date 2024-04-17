@@ -123,7 +123,13 @@ header {
 
                     .nav-link {
                         text-decoration: none;
-                        color: $second-color;
+                        color: $second-color; 
+                        display: inline-block;
+                        transition: color 0.5s;
+
+                        &:hover {
+                            color: $first-color;
+                        }
 
                         &::before {
                             font-family: "Font Awesome 5 Free";
@@ -1007,7 +1013,6 @@ footer {
                         text-decoration: none;
                         display: inline-block;
                         transition: .5s;
-                        //background-image: linear-gradient(to right, $first-color, $first-color, 50% #ffffff 50%);
                         background-size: 200% 100%;
                         background-position: 100%;
                         -webkit-text-fill-color: transparent;
