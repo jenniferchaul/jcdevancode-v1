@@ -1,92 +1,14 @@
-//// Sélectionnez tous les liens de questions
-//const questionToggles = document.querySelectorAll('.active');
-//
-//// Ajoutez un gestionnaire d'événements à chaque lien
-//questionToggles.forEach(toggle => {
-//    toggle.addEventListener('click', function(e) {
-//        // Empêchez le comportement par défaut du lien (aller vers une autre page)
-//        e.preventDefault();
-//        // Sélectionnez le paragraphe suivant (la réponse à la question)
-//        const answer = this.nextElementSibling;
-//        // Basculer la visibilité de la réponse
-//        answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
-//        this.classList.toggle('open');
-//        this.classList.toggle('close');
-//    });
-//});
-//
-//const links = document.querySelectorAll("nav li");
-//
-//icons.addEventListener("click", () => {
-//  nav.classList.toggle("active");
-//});
-//
-//links.forEach((link) => {
-//  link.addEventListener("click", () => {
-//    nav.classList.remove("active");
-//  });
-//});
 
-//document.addEventListener('DOMContentLoaded', function() {
-//  // Sélectionnez toutes les icônes de basculement
-//  const questionToggles = document.querySelectorAll('.toggle-icon');
-//
-//  // Ajoutez un gestionnaire d'événements à chaque icône
-//  questionToggles.forEach(toggle => {
-//    toggle.addEventListener('click', function(e) {
-//      // Empêchez le comportement par défaut
-//      e.preventDefault();
-//
-//      // Sélectionnez le lien et le paragraphe suivants (la réponse à la question)
-//      const questionLink = this.previousElementSibling;
-//      const answer = this.nextElementSibling;
-//
-//      // Basculer la visibilité de la réponse
-//      answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
-//
-//      // Basculer les classes du lien pour les styles ouverts/fermés
-//      questionLink.classList.toggle('open');
-//      questionLink.classList.toggle('close');
-//
-//      // Basculer l'icône entre plus et moins
-//      if (this.src.includes('plus.png')) {
-//        this.src = 'path/to/moins.png';
-//      } else {
-//        this.src = 'path/to/plus.png';
-//      }
-//    });
-//  });
-//
-//  // Gestion du menu de navigation
-//  const icons = document.querySelector('.icons');
-//  const nav = document.querySelector('nav');
-//  const links = document.querySelectorAll('nav li');
-//
-//  icons.addEventListener('click', () => {
-//    nav.classList.toggle('active');
-//  });
-//
-//  links.forEach(link => {
-//    link.addEventListener('click', () => {
-//      nav.classList.remove('active');
-//    });
-//  });
-//});
-//
-//
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Sélectionnez toutes les icônes de basculement
+  // Sélectionnez toutes les icônes de basculement et les questions
   const questionToggles = document.querySelectorAll('.toggle-icon');
+  const questionLinks = document.querySelectorAll('.active.close');
 
-  // Ajoutez un gestionnaire d'événements à chaque icône
-  questionToggles.forEach(toggle => {
-    toggle.addEventListener('click', function(e) {
-      // Empêchez le comportement par défaut
-      e.preventDefault();
-
+  // Fonction pour basculer la visibilité de la réponse
+  function toggleAnswer(element) {
       // Sélectionnez les éléments pertinents
-      const listItem = this.closest('li');
+      const listItem = element.closest('li');
       const answer = listItem.querySelector('.answer');
       const plusIcon = listItem.querySelector('.plus-icon');
       const minusIcon = listItem.querySelector('.minus-icon');
@@ -97,24 +19,25 @@ document.addEventListener('DOMContentLoaded', function() {
       // Basculer les classes pour les icônes
       plusIcon.classList.toggle('hidden');
       minusIcon.classList.toggle('hidden');
-    });
+  }
+
+  // Ajoutez un gestionnaire d'événements à chaque icône
+  questionToggles.forEach(toggle => {
+      toggle.addEventListener('click', function(e) {
+          e.preventDefault();
+          toggleAnswer(this);
+      });
   });
 
-  // Gestion du menu de navigation
-  const icons = document.querySelector('.icons');
-  const nav = document.querySelector('nav');
-  const links = document.querySelectorAll('nav li');
-
-  icons.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-
-  links.forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('active');
-    });
+  // Ajoutez un gestionnaire d'événements à chaque question
+  questionLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+          e.preventDefault();
+          toggleAnswer(this);
+      });
   });
 });
+
 
 const btn = document.querySelector('.btn');
 
@@ -127,3 +50,17 @@ btn.addEventListener('click', () => {
     })
 
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleButton = document.querySelector('.toggle');
+  const navbarContent = document.querySelector('.navbar-content');
+  const menuIcon = document.querySelector('.menu-icon');
+  const closeIcon = document.querySelector('.close-icon');
+
+  toggleButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    navbarContent.classList.toggle('show');
+    menuIcon.classList.toggle('hide');
+    closeIcon.classList.toggle('hide');
+});
+});
