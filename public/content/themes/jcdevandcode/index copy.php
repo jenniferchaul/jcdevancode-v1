@@ -65,7 +65,7 @@
                         <li class="nav-item">
                             <a class="nav-link underline" href="#">Contact</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link mail" href="mailto:jcdevandcode@gmail.com">jcdevandcode@gmail.com</a> </li>
+                        <li class="nav-item"><a class="nav-link mail" href="mailto:contact@jcdevandcode.fr">contact@jcdevandcode.fr</a> </li>
                         <li class="nav-item"><a class="nav-link phone" href="tel:+33661246520">06 61 24 65 20</a></li>
                     </ul>
                 </div>
@@ -554,7 +554,7 @@
                     </div>
 
                     <div class="footer-social-info">
-                        <p>jcdevandcode@gmail.com</p>
+                        <p>contact@jcdevandcode.fr</p>
                     </div>
                 </div>
 

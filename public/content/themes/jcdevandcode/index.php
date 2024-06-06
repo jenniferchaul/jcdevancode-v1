@@ -1,79 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
 
     <?php get_header(); ?>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel="stylesheet" href="content/themes/jcdevandcode/assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-
-    <div class="btn">
-        <img src="<?= get_theme_file_uri('assets/images/arrow.svg') ?>" alt="arrow-scroll">
-
-    </div>
-
-    <header>
-
-        <nav class="navbar">
-            <div class="container">
-                <a class="logo" href="#hero">
-                    <img class="img-logo" src="<?= get_theme_file_uri('assets/images/logo.png') ?>" alt="logo">
-                </a>
-
-                <div class="navbar-content">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link underline active" href="#hero">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link underline services-menu" href="#">Services <span><i class="fas fa-angle-down"></i></span> </a>
-                            <div class="sub-menu">
-                                <ul>
-                                    <li><a href="content/themes/jcdevandcode/vitrine.php">Sites vitrine</a></li>
-                                    <li><a href="content/themes/jcdevandcode/vitrine.php">Site e-commerce</a></li>
-                                    <li><a href="#">SEO - Référencement naturel</a></li>
-                                    <li><a href="#">Branding</a></li>
-                                </ul>
-
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link underline" href="#projects">Réalisations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link underline" href="#faq">F.A.Q.</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link underline" href="#contact">Contact</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link mail" href="mailto:jcdevandcode@gmail.com">jcdevandcode@gmail.com</a> </li>
-                        <li class="nav-item"><a class="nav-link phone" href="tel:+33661246520">06 61 24 65 20</a></li>
-                    </ul>
-                </div>
-
-                <a class="toggle" href="#">
-                    <img class="img-toggle menu-icon" src="<?= get_theme_file_uri('assets/images/menu.png') ?>" alt="">
-                    <img class="img-toggle close-icon" src="<?= get_theme_file_uri('assets/images/crossburger.png') ?>" alt="">
-                </a>
-            </div>
-        </nav>
-    </header>
 
     <section id="hero" class="hero">
 
@@ -84,7 +11,7 @@
             <a href="https://x.com/jcdevandcode"><i class="fab fa-twitter"></i></a>
             <span class="follow-us"> Suivez-nous</span>
         </div>
-        <div class="hero-presentation"> 
+        <div class="hero-presentation">
 
             <h3>Boostez votre présence en ligne</h3>
 
@@ -108,9 +35,9 @@
             </div>
 
 
-            <div class="img-under-button"> 
-                
-            <img class="img-logo" src="<?= get_theme_file_uri('assets/images/img_hero.png') ?>" alt="logo-hero">
+            <div class="img-under-button">
+
+                <img class="img-logo" src="<?= get_theme_file_uri('assets/images/img_hero.png') ?>" alt="logo-hero">
 
             </div>
 
@@ -470,9 +397,11 @@
 
                 <p>Vous avez un projet de création de site web ?</p>
 
-                <p>Contactez-nous, par email, téléphone ou via le formulaire.</p>
+                <p>Contactez-nous, par email : <span>contact@jcdevandcode.fr</span>, par téléphone : <span>06.61.24.65.20</span> ou via le formulaire.</p>
 
                 <p>Nous vous fournirons un devis détaillé dans un délai de 48 heures.</p>
+
+                
 
             </div>
 
@@ -483,121 +412,13 @@
             </div>
 
             <div>
-            <?php echo do_shortcode('[wpforms id="19"]'); ?>
-        </div>
+                <?php echo do_shortcode('[contact-form-7 id="2aeafc2" title="Contact"]'); ?>
+
+            </div>
 
         </div>
 
     </section>
 
-    <footer>
 
-        <div class="container-footer">
-
-            <div class="footer-logo">
-                <a href="#hero">
-                    <img class="img-logo" src="<?= get_theme_file_uri('assets/images/logo.png') ?>" alt="logo">
-                </a>
-            </div>
-
-            <div class="intro-footer">
-
-                <p>
-                    <span>jc dev&code</span> met son expertise à votre service pour créer votre site vitrine ou e-commerce.
-                </p>
-
-                <div class="social-footer">
-
-                    <a href="https://www.facebook.com/share/Arm8kamBYB2VWFAD/">
-                        <i class="fab fa-facebook">
-
-                        </i>
-                    </a>
-
-                    <a href="https://www.instagram.com/jcdevandcode?igsh=NmI3cXNpOHI3ZTRj">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-
-                    <a href="https://x.com/jcdevandcode">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-
-                </div>
-            </div>
-
-            <div class="bloc-services">
-
-                <h2><span>S</span>ervices</h2>
-
-                <ul>
-
-                    <li><a href="#">Sites vitrine</a></li>
-                    <li><a href="#">Sites e-commerce</a></li>
-                    <li><a href="#">SEO - Référencement naturel</a></li>
-                    <li><a href="#">Branding </a></li>
-
-                </ul>
-            </div>
-
-            <div class="bloc-contact">
-
-                <h2><span>C</span>ontact</h2>
-
-                <div class="info-contact">
-
-                    <div class="footer-social-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-
-                    <div class="footer-social-info">
-                        <p>06.61.24.65.20</p>
-                    </div>
-                </div>
-
-                <div class="info-contact">
-                    <div class="footer-social-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-
-                    <div class="footer-social-info">
-                        <p>jcdevandcode@gmail.com</p>
-                    </div>
-                </div>
-
-                <div class="info-contact">
-
-                    <div class="footer-social-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-
-                    <div class="footer-social-info">
-                        <p>80 Impasse des Vignes, 01290 GRIEGES </p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-
-            <div class="copyright">
-
-                <p>&#169; Copyright 2024 <span>jc dev&code</span>. Tous droits résérvés</p>
-            </div>
-
-            <div class="legale-notices">
-                <ul>
-                    <li><a href="">Mentions légales - </a></li>
-                    <li><a href="">Cgv - </a></li>
-                    <li><a href="">Politique de confidentialité</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-    </footer>
-
-    <?php get_footer(); ?>
-</body>
-
-</html>
+<?php get_footer(); ?>

@@ -43,3 +43,4 @@ add_action('wp_enqueue_scripts', function() {
         true // Le script sera placé dans le footer
     );
 });
+
