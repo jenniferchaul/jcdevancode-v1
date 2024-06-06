@@ -13,6 +13,7 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Développeur freelance spécialisé dans la création de sites vitrines, e-commerce, référencement naturel (SEO) et branding (création de logo, charte graphique). Contactez-nous pour transformer votre présence en ligne.">
 
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -51,10 +52,10 @@
                             <a class="nav-link underline services-menu" href="#">Services <span><i class="fas fa-angle-down"></i></span> </a>
                             <div class="sub-menu">
                                 <ul>
-                                    <li><a href="<?= home_url('/sites-vitrine') ?>">Sites vitrine</a></li>
-                                    <li><a href="<?= get_permalink(get_page_by_path('sites-ecommerce')) ?>">Site e-commerce</a></li>
-                                    <li><a href="#">SEO - Référencement naturel</a></li>
-                                    <li><a href="#">Branding</a></li>
+                                    <li><a href="https://jcdevandcode.fr/sites-vitrines">Sites vitrine</a></li>
+                                    <li><a href="https://jcdevandcode.fr/sites-ecommerce">Site e-commerce</a></li>
+                                    <li><a href="https://jcdevandcode.fr/seo">SEO - Référencement naturel</a></li>
+                                    <li><a href="https://jcdevandcode.fr/branding">Branding</a></li>
                                 </ul>
 
                             </div>
@@ -74,8 +75,8 @@
                 </div>
 
                 <a class="toggle" href="#">
-                    <img class="img-toggle menu-icon" src="<?= get_theme_file_uri('assets/images/menu.png') ?>" alt="">
-                    <img class="img-toggle close-icon" src="<?= get_theme_file_uri('assets/images/crossburger.png') ?>" alt="">
+                    <img class="img-toggle menu-icon" src="<?= get_theme_file_uri('assets/images/menu.png') ?>" alt="icon menu">
+                    <img class="img-toggle close-icon" src="<?= get_theme_file_uri('assets/images/crossburger.png') ?>" alt="icon cross">
                 </a>
             </div>
         </nav>
@@ -83,5 +84,4 @@
 
 <?php
 
-// STEP E4 THEME gestion du header de la page html par wordpress
 wp_head();

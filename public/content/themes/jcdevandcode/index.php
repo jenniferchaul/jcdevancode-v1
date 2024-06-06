@@ -288,7 +288,7 @@
 
             <div class="faq-part">
 
-                <img class="image-faq" src="<?= get_theme_file_uri('assets/images/faq.png') ?>" alt="">
+                <img class="image-faq" src="<?= get_theme_file_uri('assets/images/faq.png') ?>" alt="image faq">
 
 
                 <div class="questions">
@@ -407,7 +407,7 @@
 
             <div class="picto-email-avion">
 
-                <img src="<?= get_theme_file_uri('assets/images/email-avion.png') ?>" alt="icone avion email">
+                <img src="<?= get_theme_file_uri('assets/images/email-avion.png') ?>" alt="icon avion email">
 
             </div>
 
