@@ -20,7 +20,7 @@
             <h2>crée votre <span>site internet</span></h2>
 
 
-            <h4> Avec notre expertise, vous serez en mesure de vous <span>démarquer</span> et de <span>mettre en valeur</span> votre entreprise
+            <h4> Avec notre expertise, vous serez en mesure de vous <span>démarquer</span> et de <span>mettre en valeur</span> votre entreprise avec un site vitrine ou un site e-commerce.
             </h4>
 
             <div class="hero-buttons">

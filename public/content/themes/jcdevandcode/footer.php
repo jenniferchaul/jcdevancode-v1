@@ -96,9 +96,8 @@
 
     <div class="legale-notices">
         <ul>
-            <li><a href="">Mentions légales - </a></li>
-            <li><a href="">Cgv - </a></li>
-            <li><a href="">Politique de confidentialité</a></li>
+            <li><a href="<?= home_url('/mentions-legales') ?>">Mentions légales - </a></li>
+            <li><a href="<?= home_url('/politique-de-confidentialite') ?>">Politique de confidentialité</a></li>
         </ul>
     </div>
 

@@ -812,12 +812,12 @@ header .navbar-content.show ~ .toggle .close-icon {
   margin-right: 0.5rem;
 }
 .container-form .wpcf7 {
-  max-width: 500px; /* Ajustez la largeur maximale selon vos besoins */
+  max-width: 500px;
   margin: 0 auto;
-  background-color: #fff; /* Couleur de fond */
+  background-color: #fff;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .container-form label {
   color: #f09E33;
@@ -829,16 +829,16 @@ header .navbar-content.show ~ .toggle .close-icon {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc; /* Bordure */
+  border: 1px solid #ccc;
   border-radius: 5px;
   font-family: "Montserrat" !important;
 }
 .container-form .wpcf7 textarea {
-  min-height: 150px; /* Hauteur minimale pour la zone de texte */
+  min-height: 150px;
 }
 .container-form .wpcf7 input[type=submit] {
-  background-color: #f09E33 !important; /* Couleur de fond du bouton */
-  color: #fff !important; /* Couleur du texte du bouton */
+  background-color: #f09E33 !important;
+  color: #fff !important;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -851,12 +851,119 @@ header .navbar-content.show ~ .toggle .close-icon {
 }
 .container-form .wpcf7-validation-errors,
 .container-form .wpcf7-mail-sent-ok {
-  background-color: #ffcdd2; /* Couleur de fond pour les messages d'erreur */
-  color: #c62828; /* Couleur du texte pour les messages d'erreur */
+  background-color: #ffcdd2;
+  color: #c62828;
 }
 .container-form .wpcf7-mail-sent-ok {
-  background-color: #dcedc8; /* Couleur de fond pour les messages de succès */
-  color: #2e7d32; /* Couleur du texte pour les messages de succès */
+  background-color: #dcedc8;
+  color: #2e7d32;
+}
+
+/*Pages mentions légales et politique de confidentialité*/
+.mentions-legales,
+.politique-de-confidentialité {
+  font-family: "Montserrat";
+  margin: 7rem 1rem 4rem;
+}
+.mentions-legales h1,
+.politique-de-confidentialité h1 {
+  font-size: 44px;
+  font-weight: 400;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+  margin-bottom: 1.5rem;
+}
+.mentions-legales h2,
+.politique-de-confidentialité h2 {
+  margin: 1rem 0;
+  font-size: 24px;
+  color: #f09E33;
+  font-weight: 500;
+}
+.mentions-legales h3,
+.politique-de-confidentialité h3 {
+  margin: 1rem 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.mentions-legales p,
+.mentions-legales li,
+.politique-de-confidentialité p,
+.politique-de-confidentialité li {
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+.mentions-legales span,
+.politique-de-confidentialité span {
+  font-weight: 600;
+}
+.mentions-legales a,
+.politique-de-confidentialité a {
+  color: #000000;
+  font-weight: 600;
+}
+.mentions-legales ul,
+.politique-de-confidentialité ul {
+  margin: 1rem 0;
+}
+.mentions-legales li,
+.politique-de-confidentialité li {
+  margin-bottom: 1rem;
+}
+
+/* Page branding */
+.branding {
+  margin: 2rem 5rem 4rem;
+  font-family: "Montserrat";
+}
+.branding h2 {
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 38px;
+}
+.branding span {
+  font-weight: 600;
+}
+.branding .branding-services {
+  display: flex;
+  margin-top: 2rem;
+}
+.branding .branding-services .img-services {
+  width: 12rem;
+  border-radius: 1.5rem;
+}
+.branding .branding-services .description-services {
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.branding .branding-services .description-services h3 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.branding .branding-services .description-services p {
+  line-height: 22px;
+}
+
+.contact-services {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.contact-services .cta a {
+  font-family: "Rajdhani";
+  color: #000000;
+  background-color: #f09E33;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 1rem;
+  line-height: 0;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 0.5rem;
+  text-align: center;
 }
 
 footer {
