@@ -40,10 +40,10 @@
 
         <ul>
 
-            <li><a href="#">Sites vitrine</a></li>
+            <li><a href="<?= home_url('/sites-vitrine') ?>">Sites vitrine</a></li>
             <li><a href="#">Sites e-commerce</a></li>
             <li><a href="#">SEO - Référencement naturel</a></li>
-            <li><a href="#">Branding </a></li>
+            <li><a href="<?= home_url('/branding') ?>">Branding </a></li>
 
         </ul>
     </div>

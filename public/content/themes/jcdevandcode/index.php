@@ -66,7 +66,7 @@
 
                 <div class="card-services vitrine grey">
 
-                    <a class="vitrine_link" href="content/themes/jcdevandcode/contact.php">
+                    <a class="vitrine_link" href="<?= home_url('/sites-vitrine') ?>">
 
                         <h3>Sites vitrine</h3>
 
@@ -107,7 +107,7 @@
 
                 <div class="card-services branding white">
 
-                    <a class="branding_link" href="#">
+                    <a class="branding_link" href="<?= home_url('/branding') ?>">
 
                         <h3>Branding</h3>
 

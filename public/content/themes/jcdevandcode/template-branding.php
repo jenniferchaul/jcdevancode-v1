@@ -54,13 +54,17 @@ get_header();
 </section>
 
 
-<section class="branding">
+<section class="branding-section">
 
     <h2>Nos Services de Branding</h2>
 
     <div class="branding-services">
 
-        <img class="img-services" src="<?= get_theme_file_uri('assets/images/creation_logo.webp') ?>" alt="image creation logo">
+        <div>
+
+            <img class="img-services" src="<?= get_theme_file_uri('assets/images/creation_logo.webp') ?>" alt="image creation logo">
+
+        </div>
 
         <div class="description-services">
 
@@ -71,23 +75,32 @@ get_header();
         </div>
     </div>
 
-    <div class="branding-services">
+    <div class="branding-services reverse">
+
+        <div>
+
+            <img class="img-services" src="<?= get_theme_file_uri('assets/images/charte_graphique.webp') ?>" alt="image creation charte graphique">
+
+        </div>
 
         <div class="description-services">
 
             <h3>Charte Graphique</h3>
 
-            <p> 
-            Pour garantir une cohérence visuelle et une identité de marque harmonisée sur tous vos supports, y compris les publicités numériques, une charte graphique complète est indispensable.</p>
+            <p>
+                Pour garantir une cohérence visuelle et une identité de marque harmonisée sur tous vos supports, y compris les publicités numériques, une charte graphique complète est indispensable.</p>
 
         </div>
 
-        <img class="img-services" src="<?= get_theme_file_uri('assets/images/charte_graphique.webp') ?>" alt="image creation charte graphique">
     </div>
 
     <div class="branding-services">
 
-        <img class="img-services" src="<?= get_theme_file_uri('assets/images/design_web.webp') ?>" alt="image creation design site web">
+        <div>
+
+            <img class="img-services" src="<?= get_theme_file_uri('assets/images/design_web.webp') ?>" alt="image creation design site web">
+
+        </div>
 
         <div class="description-services">
 
@@ -98,28 +111,33 @@ get_header();
         </div>
     </div>
 
-    <div class="branding-services">
+    <div class="branding-services reverse">
 
-        <div class="description-services">
+<div>
 
-            <h3>Supports Marketing</h3>
+    <img class="img-services" src="<?= get_theme_file_uri('assets/images/marketing.webp') ?>" alt="image creation supports marketing">
 
-            <p> Flyers, brochures, cartes de visite – nous vous aidons à produire des supports marketing de qualité qui font la différence et captent l'attention de votre audience.</p>
+</div>
 
-        </div>
+<div class="description-services">
 
-        <img class="img-services" src="<?= get_theme_file_uri('assets/images/marketing.webp') ?>" alt="image creation supports marketing">
+    <h3>Supports Marketing</h3>
 
-    </div>
+    <p>
+    Flyers, brochures, cartes de visite – nous vous aidons à produire des supports marketing de qualité qui se démarquent par leur originalité et captent efficacement l'attention de votre audience, en mettant en valeur vos messages de manière percutante et attrayante.</p>
+
+</div>
+
+</div>
 
 </section>
 
 
 <section class="contact-services">
 
-<div class="cta">
-    <a href="<?= home_url('/#contact') ?>">Contactez-nous pour un Devis</a>
-</div>
+    <div class="cta">
+        <a href="<?= home_url('/#contact') ?>">Contactez-nous pour un Devis</a>
+    </div>
 
 </section>
 

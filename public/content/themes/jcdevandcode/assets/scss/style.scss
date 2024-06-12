@@ -976,7 +976,7 @@ label {
 .politique-de-confidentialité {
 
     font-family: $main-font;
-    margin: 7rem 1rem 4rem;
+    margin: 10rem 1rem 4rem;
 
     h1 {
         font-size: 44px;
@@ -1024,8 +1024,9 @@ label {
 
 /* Page branding */
 
-.branding {
-    margin: 2rem 5rem 4rem;
+.branding-section,
+.sites-vitrine-section {
+    margin: 2rem 1rem 4rem;
     font-family: $main-font;
 
     h2 {
@@ -1040,22 +1041,25 @@ label {
 
     .branding-services {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-top: 2rem;
 
         .img-services {
-            width: 12rem;
+            max-width: 192px;
+            /* Limite la largeur maximale */
+            max-height: 192px;
             border-radius: 1.5rem;
         }
 
         .description-services {
-            padding: 0 3rem;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            text-align: center;
 
             h3 {
                 font-size: 24px;
-                margin-bottom: 1rem;
+                margin: 1rem 1rem;
                 font-weight: 500;
             }
 
@@ -1066,31 +1070,56 @@ label {
     }
 }
 
-        .contact-services {
+.contact-services {
     display: flex;
-justify-content: center;
-margin-bottom: 4rem;
+    justify-content: center;
+    margin-bottom: 4rem;
 
 
-            .cta {
-    
-                a {
-                
-                    font-family: $second-font;
-                    color: #000000;
-                    background-color: #f09E33;
-                    border-radius: 5px;
-                    font-weight: 600;
-                    padding: 1rem;
-                    line-height: 0;
-                    text-decoration: none;
-                    font-size: 18px;
-                    margin-right: 0.5rem;
-                    text-align: center;
-                }
-            }
-    
+    .cta {
+
+        a {
+
+            font-family: $second-font;
+            color: #000000;
+            background-color: #f09E33;
+            border-radius: 5px;
+            font-weight: 600;
+            padding: 1rem;
+            line-height: 0;
+            text-decoration: none;
+            font-size: 18px;
+            margin-right: 0.5rem;
+            text-align: center;
         }
+    }
+
+}
+
+.sites-vitrine-section {
+    .img-vitrine {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 20rem;
+        }
+    }
+
+    h2 {
+        margin: 1rem 0;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        line-height: 22px;
+    }
+
+    li {
+        line-height: 22px;
+        margin-bottom: 1rem;
+    }
+}
 
 
 footer {
@@ -1652,6 +1681,41 @@ footer {
             }
         }
     }
+
+/* version desktop */
+.branding-section {
+    margin: 2rem 5rem 4rem;
+
+    .branding-services {
+        display: flex;
+      flex-direction:row;
+
+      &.reverse {
+        flex-direction: row-reverse;
+     }
+
+        .description-services {
+            padding: 0 3rem;
+            justify-content: center;
+            text-align: left;
+
+            h3 {
+                margin: 1rem 0rem;
+            }
+        }
+    }
+}
+
+.sites-vitrine-section {
+    .img-vitrine {
+        img {
+            width: 40rem;
+        }
+    }
+}
+
+
+
 
     footer {
 

@@ -87,7 +87,7 @@
                             <a class="nav-link underline services-menu" href="#">Services <span><i class="fas fa-angle-down"></i></span> </a>
                             <div class="sub-menu">
                                 <ul>
-                                    <li><a href="<?= home_url('/#hero') ?>">Sites vitrine</a></li>
+                                    <li><a href="<?= home_url('/sites-vitrine') ?>">Sites vitrine</a></li>
                                     <li><a href="<?= home_url('/sites-ecommerce') ?>">Site e-commerce</a></li>
                                     <li><a href="<?= home_url('/seo') ?>">SEO - Référencement naturel</a></li>
                                     <li><a href="<?= home_url('/branding') ?>">Branding</a></li>

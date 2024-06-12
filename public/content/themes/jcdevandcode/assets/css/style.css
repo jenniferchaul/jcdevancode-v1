@@ -863,7 +863,7 @@ header .navbar-content.show ~ .toggle .close-icon {
 .mentions-legales,
 .politique-de-confidentialité {
   font-family: "Montserrat";
-  margin: 7rem 1rem 4rem;
+  margin: 10rem 1rem 4rem;
 }
 .mentions-legales h1,
 .politique-de-confidentialité h1 {
@@ -912,38 +912,49 @@ header .navbar-content.show ~ .toggle .close-icon {
 }
 
 /* Page branding */
-.branding {
-  margin: 2rem 5rem 4rem;
+.branding-section,
+.sites-vitrine-section {
+  margin: 2rem 1rem 4rem;
   font-family: "Montserrat";
 }
-.branding h2 {
+.branding-section h2,
+.sites-vitrine-section h2 {
   font-family: "Montserrat";
   text-align: center;
   font-size: 38px;
 }
-.branding span {
+.branding-section span,
+.sites-vitrine-section span {
   font-weight: 600;
 }
-.branding .branding-services {
-  display: flex;
-  margin-top: 2rem;
-}
-.branding .branding-services .img-services {
-  width: 12rem;
-  border-radius: 1.5rem;
-}
-.branding .branding-services .description-services {
-  padding: 0 3rem;
+.branding-section .branding-services,
+.sites-vitrine-section .branding-services {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
-.branding .branding-services .description-services h3 {
+.branding-section .branding-services .img-services,
+.sites-vitrine-section .branding-services .img-services {
+  max-width: 192px;
+  /* Limite la largeur maximale */
+  max-height: 192px;
+  border-radius: 1.5rem;
+}
+.branding-section .branding-services .description-services,
+.sites-vitrine-section .branding-services .description-services {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.branding-section .branding-services .description-services h3,
+.sites-vitrine-section .branding-services .description-services h3 {
   font-size: 24px;
-  margin-bottom: 1rem;
+  margin: 1rem 1rem;
   font-weight: 500;
 }
-.branding .branding-services .description-services p {
+.branding-section .branding-services .description-services p,
+.sites-vitrine-section .branding-services .description-services p {
   line-height: 22px;
 }
 
@@ -964,6 +975,25 @@ header .navbar-content.show ~ .toggle .close-icon {
   font-size: 18px;
   margin-right: 0.5rem;
   text-align: center;
+}
+
+.sites-vitrine-section .img-vitrine {
+  display: flex;
+  justify-content: center;
+}
+.sites-vitrine-section .img-vitrine img {
+  width: 20rem;
+}
+.sites-vitrine-section h2 {
+  margin: 1rem 0;
+}
+.sites-vitrine-section p {
+  margin-bottom: 1rem;
+  line-height: 22px;
+}
+.sites-vitrine-section li {
+  line-height: 22px;
+  margin-bottom: 1rem;
 }
 
 footer {
@@ -1376,6 +1406,28 @@ footer .footer-bottom .legale-notices ul li a {
   .services .container-services .card-services {
     width: 20rem;
     height: 19rem;
+  }
+  /* version desktop */
+  .branding-section {
+    margin: 2rem 5rem 4rem;
+  }
+  .branding-section .branding-services {
+    display: flex;
+    flex-direction: row;
+  }
+  .branding-section .branding-services.reverse {
+    flex-direction: row-reverse;
+  }
+  .branding-section .branding-services .description-services {
+    padding: 0 3rem;
+    justify-content: center;
+    text-align: left;
+  }
+  .branding-section .branding-services .description-services h3 {
+    margin: 1rem 0rem;
+  }
+  .sites-vitrine-section .img-vitrine img {
+    width: 40rem;
   }
   footer {
     background: #032e40;
