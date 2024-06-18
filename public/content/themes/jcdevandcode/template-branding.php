@@ -12,7 +12,7 @@ get_header();
 
         <a href="https://www.facebook.com/share/Arm8kamBYB2VWFAD/ "><i class="fab fa-facebook"></i></a>
         <a href="https://www.instagram.com/jcdevandcode?igsh=NmI3cXNpOHI3ZTRj"><i class="fab fa-instagram"></i></a>
-        <a href="https://x.com/jcdevandcode"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com/company/jc-dev-code"><i class="fab fa-linkedin-in"></i></a>
         <span class="follow-us"> Suivez-nous</span>
     </div>
 
@@ -41,14 +41,14 @@ get_header();
 
         <div class="img-under-button">
 
-            <img class="img-logo" src="<?= get_theme_file_uri('assets/images/img_hero.png') ?>" alt="logo-hero">
+            <img class="img-logo" src="<?= get_theme_file_uri('assets/images/www-amico.svg') ?>" alt="logo-hero">
 
         </div>
 
     </div>
 
     <div class="hero-img">
-        <img class="img-logo" src="<?= get_theme_file_uri('assets/images/img_hero.png') ?>" alt="logo-hero">
+        <img class="img-logo" src="<?= get_theme_file_uri('assets/images/www-amico.svg') ?>" alt="logo-hero">
     </div>
 
 </section>
@@ -57,6 +57,13 @@ get_header();
 <section class="branding-section">
 
     <h2>Nos Services de Branding</h2>
+
+    <div class="img-vitrine">
+
+    <img src="<?= get_theme_file_uri('assets/images/brands-creation-animate.svg') ?>" alt="image creation logo">
+    
+    </div>
+
 
     <div class="branding-services">
 

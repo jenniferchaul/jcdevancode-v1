@@ -2,6 +2,8 @@
 <html lang="fr">
 
 <head>
+
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="a3b84b19-08bb-4af4-9838-b13c190fa88a" data-blockingmode="auto" type="text/javascript"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQWLYNRNKS"></script>
     <script>

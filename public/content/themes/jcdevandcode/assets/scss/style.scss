@@ -453,6 +453,8 @@ header {
             height: auto;
             font-size: 18px;
             line-height: 1.5rem;
+            text-decoration: none;
+            color: #000000;
 
             &.vitrine:before {
                 content: url("../images/vitrine_100_orange.png");
@@ -493,6 +495,7 @@ header {
 
             &:hover {
                 background-color: $first-color;
+                color: $third-color;
 
                 a {
                     color: #ffffff;
@@ -569,7 +572,6 @@ header {
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 2px;
-            //text-align: center;
             padding: 1rem;
         }
 
@@ -1025,14 +1027,22 @@ label {
 /* Page branding */
 
 .branding-section,
-.sites-vitrine-section {
-    margin: 2rem 1rem 4rem;
+.sites-vitrine-section,
+.sites-ecommerce-section,
+.seo-section {
+    margin: 2rem 6rem 4rem;
     font-family: $main-font;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 
     h2 {
         font-family: $main-font;
         text-align: center;
-        font-size: 38px;
+        font-size: 32px;
+        margin: 2rem 0;
+        width: auto;
     }
 
     span {
@@ -1079,35 +1089,47 @@ label {
     .cta {
 
         a {
-
-            font-family: $second-font;
+            font-family: $main-font;
             color: #000000;
             background-color: #f09E33;
             border-radius: 5px;
             font-weight: 600;
-            padding: 1rem;
+            padding: 0.5rem;
             line-height: 0;
             text-decoration: none;
             font-size: 18px;
-            margin-right: 0.5rem;
+            //margin-right: 0.5rem;
             text-align: center;
         }
     }
 
 }
 
-.sites-vitrine-section {
+.branding-section, 
+.sites-vitrine-section,
+.sites-ecommerce-section,
+.seo-section {
     .img-vitrine {
         display: flex;
         justify-content: center;
 
         img {
-            width: 20rem;
+            width: 18rem;
         }
     }
 
-    h2 {
-        margin: 1rem 0;
+    .part-text {
+            div {
+                display: flex;
+                flex-direction: column;
+               // align-items: center;
+            }
+        padding: 1rem;
+        border-radius: 10px;
+        border: 1px solid rgba(26, 46, 85, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-top: 2rem;
+        min-width: 20rem;
     }
 
     p {
@@ -1121,6 +1143,38 @@ label {
     }
 }
 
+.sites-ecommerce-section,
+.seo-section {
+
+    img {
+        width: 18rem;
+    }
+
+}
+
+.error-404 {
+    margin-top: 14rem;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .img-error {
+        width: 20rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+
+        a {
+            color: $first-color;
+            font-family: "Rajdhani";
+            font-size: 30px;
+            font-weight: 600; 
+        }
+    }
+}
 
 footer {
 
@@ -1362,10 +1416,6 @@ footer {
                 flex-direction: row-reverse;
                 padding-top: 3rem;
                 justify-content: center;
-    
-                //.info-contact {
-                //    padding-left: 5rem;
-                //}
             }
     
         }
@@ -1438,12 +1488,6 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-    h2 {
-        color: $first-color;
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: 600;
-    }
 
 
     header {
@@ -1591,8 +1635,6 @@ footer {
     .hero {
         margin-top: 6rem;
 
-        .hero-social-icon {}
-
         .hero-presentation {
 
             h3 {
@@ -1683,8 +1725,25 @@ footer {
     }
 
 /* version desktop */
-.branding-section {
+.branding-section,
+.sites-vitrine-section,
+.sites-ecommerce-section,
+.seo-section {
     margin: 2rem 5rem 4rem;
+    h2 {
+        font-size: 38px;
+    }
+    img {
+        width: 40rem;
+    }
+
+    .img-vitrine,
+    .img-seo {
+        img {
+            width: 35rem;
+        }
+    }
+
 
     .branding-services {
         display: flex;
@@ -1706,14 +1765,13 @@ footer {
     }
 }
 
-.sites-vitrine-section {
-    .img-vitrine {
-        img {
-            width: 40rem;
-        }
-    }
-}
+.error-404 {
 
+    .img-error {
+        width: 30rem;
+    }
+
+}
 
 
 

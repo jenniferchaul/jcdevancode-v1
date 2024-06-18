@@ -435,6 +435,8 @@ header .navbar-content.show ~ .toggle .close-icon {
   height: auto;
   font-size: 18px;
   line-height: 1.5rem;
+  text-decoration: none;
+  color: #000000;
 }
 .services .container-services .card-services.vitrine:before {
   content: url("../images/vitrine_100_orange.png");
@@ -465,6 +467,7 @@ header .navbar-content.show ~ .toggle .close-icon {
 }
 .services .container-services .card-services:hover {
   background-color: #f09E33;
+  color: #ffffff;
 }
 .services .container-services .card-services:hover a {
   color: #ffffff;
@@ -913,48 +916,69 @@ header .navbar-content.show ~ .toggle .close-icon {
 
 /* Page branding */
 .branding-section,
-.sites-vitrine-section {
-  margin: 2rem 1rem 4rem;
+.sites-vitrine-section,
+.sites-ecommerce-section,
+.seo-section {
+  margin: 2rem 6rem 4rem;
   font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .branding-section h2,
-.sites-vitrine-section h2 {
+.sites-vitrine-section h2,
+.sites-ecommerce-section h2,
+.seo-section h2 {
   font-family: "Montserrat";
   text-align: center;
-  font-size: 38px;
+  font-size: 32px;
+  margin: 2rem 0;
+  width: auto;
 }
 .branding-section span,
-.sites-vitrine-section span {
+.sites-vitrine-section span,
+.sites-ecommerce-section span,
+.seo-section span {
   font-weight: 600;
 }
 .branding-section .branding-services,
-.sites-vitrine-section .branding-services {
+.sites-vitrine-section .branding-services,
+.sites-ecommerce-section .branding-services,
+.seo-section .branding-services {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
 }
 .branding-section .branding-services .img-services,
-.sites-vitrine-section .branding-services .img-services {
+.sites-vitrine-section .branding-services .img-services,
+.sites-ecommerce-section .branding-services .img-services,
+.seo-section .branding-services .img-services {
   max-width: 192px;
   /* Limite la largeur maximale */
   max-height: 192px;
   border-radius: 1.5rem;
 }
 .branding-section .branding-services .description-services,
-.sites-vitrine-section .branding-services .description-services {
+.sites-vitrine-section .branding-services .description-services,
+.sites-ecommerce-section .branding-services .description-services,
+.seo-section .branding-services .description-services {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 .branding-section .branding-services .description-services h3,
-.sites-vitrine-section .branding-services .description-services h3 {
+.sites-vitrine-section .branding-services .description-services h3,
+.sites-ecommerce-section .branding-services .description-services h3,
+.seo-section .branding-services .description-services h3 {
   font-size: 24px;
   margin: 1rem 1rem;
   font-weight: 500;
 }
 .branding-section .branding-services .description-services p,
-.sites-vitrine-section .branding-services .description-services p {
+.sites-vitrine-section .branding-services .description-services p,
+.sites-ecommerce-section .branding-services .description-services p,
+.seo-section .branding-services .description-services p {
   line-height: 22px;
 }
 
@@ -964,36 +988,88 @@ header .navbar-content.show ~ .toggle .close-icon {
   margin-bottom: 4rem;
 }
 .contact-services .cta a {
-  font-family: "Rajdhani";
+  font-family: "Montserrat";
   color: #000000;
   background-color: #f09E33;
   border-radius: 5px;
   font-weight: 600;
-  padding: 1rem;
+  padding: 0.5rem;
   line-height: 0;
   text-decoration: none;
   font-size: 18px;
-  margin-right: 0.5rem;
   text-align: center;
 }
 
-.sites-vitrine-section .img-vitrine {
+.branding-section .img-vitrine,
+.sites-vitrine-section .img-vitrine,
+.sites-ecommerce-section .img-vitrine,
+.seo-section .img-vitrine {
   display: flex;
   justify-content: center;
 }
-.sites-vitrine-section .img-vitrine img {
+.branding-section .img-vitrine img,
+.sites-vitrine-section .img-vitrine img,
+.sites-ecommerce-section .img-vitrine img,
+.seo-section .img-vitrine img {
+  width: 18rem;
+}
+.branding-section .part-text,
+.sites-vitrine-section .part-text,
+.sites-ecommerce-section .part-text,
+.seo-section .part-text {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(26, 46, 85, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 2rem;
+  min-width: 20rem;
+}
+.branding-section .part-text div,
+.sites-vitrine-section .part-text div,
+.sites-ecommerce-section .part-text div,
+.seo-section .part-text div {
+  display: flex;
+  flex-direction: column;
+}
+.branding-section p,
+.sites-vitrine-section p,
+.sites-ecommerce-section p,
+.seo-section p {
+  margin-bottom: 1rem;
+  line-height: 22px;
+}
+.branding-section li,
+.sites-vitrine-section li,
+.sites-ecommerce-section li,
+.seo-section li {
+  line-height: 22px;
+  margin-bottom: 1rem;
+}
+
+.sites-ecommerce-section img,
+.seo-section img {
+  width: 18rem;
+}
+
+.error-404 {
+  margin-top: 14rem;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.error-404 .img-error {
   width: 20rem;
 }
-.sites-vitrine-section h2 {
-  margin: 1rem 0;
-}
-.sites-vitrine-section p {
+.error-404 p {
   margin-bottom: 1rem;
-  line-height: 22px;
 }
-.sites-vitrine-section li {
-  line-height: 22px;
-  margin-bottom: 1rem;
+.error-404 p a {
+  color: #f09E33;
+  font-family: "Rajdhani";
+  font-size: 30px;
+  font-weight: 600;
 }
 
 footer {
@@ -1222,12 +1298,6 @@ footer .footer-bottom .legale-notices ul li a {
   }
 }
 @media screen and (min-width: 1024px) {
-  h2 {
-    color: #f09E33;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
   header .navbar {
     height: 7rem;
   }
@@ -1408,26 +1478,63 @@ footer .footer-bottom .legale-notices ul li a {
     height: 19rem;
   }
   /* version desktop */
-  .branding-section {
+  .branding-section,
+  .sites-vitrine-section,
+  .sites-ecommerce-section,
+  .seo-section {
     margin: 2rem 5rem 4rem;
   }
-  .branding-section .branding-services {
+  .branding-section h2,
+  .sites-vitrine-section h2,
+  .sites-ecommerce-section h2,
+  .seo-section h2 {
+    font-size: 38px;
+  }
+  .branding-section img,
+  .sites-vitrine-section img,
+  .sites-ecommerce-section img,
+  .seo-section img {
+    width: 40rem;
+  }
+  .branding-section .img-vitrine img,
+  .branding-section .img-seo img,
+  .sites-vitrine-section .img-vitrine img,
+  .sites-vitrine-section .img-seo img,
+  .sites-ecommerce-section .img-vitrine img,
+  .sites-ecommerce-section .img-seo img,
+  .seo-section .img-vitrine img,
+  .seo-section .img-seo img {
+    width: 35rem;
+  }
+  .branding-section .branding-services,
+  .sites-vitrine-section .branding-services,
+  .sites-ecommerce-section .branding-services,
+  .seo-section .branding-services {
     display: flex;
     flex-direction: row;
   }
-  .branding-section .branding-services.reverse {
+  .branding-section .branding-services.reverse,
+  .sites-vitrine-section .branding-services.reverse,
+  .sites-ecommerce-section .branding-services.reverse,
+  .seo-section .branding-services.reverse {
     flex-direction: row-reverse;
   }
-  .branding-section .branding-services .description-services {
+  .branding-section .branding-services .description-services,
+  .sites-vitrine-section .branding-services .description-services,
+  .sites-ecommerce-section .branding-services .description-services,
+  .seo-section .branding-services .description-services {
     padding: 0 3rem;
     justify-content: center;
     text-align: left;
   }
-  .branding-section .branding-services .description-services h3 {
+  .branding-section .branding-services .description-services h3,
+  .sites-vitrine-section .branding-services .description-services h3,
+  .sites-ecommerce-section .branding-services .description-services h3,
+  .seo-section .branding-services .description-services h3 {
     margin: 1rem 0rem;
   }
-  .sites-vitrine-section .img-vitrine img {
-    width: 40rem;
+  .error-404 .img-error {
+    width: 30rem;
   }
   footer {
     background: #032e40;

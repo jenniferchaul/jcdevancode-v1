@@ -27,8 +27,8 @@
                 <i class="fab fa-instagram"></i>
             </a>
 
-            <a href="https://x.com/jcdevandcode">
-                <i class="fab fa-twitter"></i>
+            <a href="https://linkedin.com/company/jc-dev-code">
+                <i class="fab fa-linkedin-in"></i>
             </a>
 
         </div>
@@ -41,8 +41,8 @@
         <ul>
 
             <li><a href="<?= home_url('/sites-vitrine') ?>">Sites vitrine</a></li>
-            <li><a href="#">Sites e-commerce</a></li>
-            <li><a href="#">SEO - Référencement naturel</a></li>
+            <li><a href="<?= home_url('/sites-ecommerce') ?>">Sites e-commerce</a></li>
+            <li><a href="<?= home_url('/seo') ?>">SEO - Référencement naturel</a></li>
             <li><a href="<?= home_url('/branding') ?>">Branding </a></li>
 
         </ul>
